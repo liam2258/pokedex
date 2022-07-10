@@ -1,38 +1,140 @@
-.App {
+.Bulk {
+  background-color: #51c26f;
+}
+
+.List {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+}
+
+.Pokemon {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  border-radius:10px;
+  font-family: fantasy;
+  background-color: #abebb5;
+}
+
+.Pokemon:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: 1fr minmax(80%, 90%) 1fr;
+  padding:20px;
+}
+
+.Types {
+  display:inline;
+  padding:10px;
+  color: white;
+  font-weight: 600;
+}
+
+.Tag {
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.Id {
+  display: inline;
+  padding: 4px;
+  border-radius: 25px;
+  background-color: #4cbfa6;
+  font-size: small;
+  font-weight: 500;
+}
+
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Search {
+  background-color: #abebb5;
+  min-height: 30px;
+  min-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grass {
+  background-color: #33f5a4;
 }
 
-.App-link {
-  color: #61dafb;
+.water {
+  background-color: #33bbf5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fire {
+  background-color: #f08330;
+}
+
+.normal {
+  background-color: #d6cda7;
+}
+
+.electric {
+  background-color: #e0e639;
+}
+
+.ice {
+  background-color: #99f2f2;
+}
+
+.fighting {
+  background-color: #f2415f;
+}
+
+.poison {
+  background-color: #c273fa;
+}
+
+.ground {
+  background-color: #f5ce62;
+}
+
+.flying {
+  background-color: #d492fc;
+}
+
+.psychic {
+  background-color: #fa69eb;
+}
+
+.bug {
+  background-color: #279643;
+}
+
+.rock {
+  background-color: #9c8328;
+}
+
+.ghost {
+  background-color: #61398f;
+}
+
+.dark {
+  background-color: #2e200c;
+}
+
+.dragon {
+  background-color: #8536cf;
+}
+
+.steel {
+  background-color: #948c9c;
+}
+
+.fairy {
+  background-color: #f2b5f5;
 }
