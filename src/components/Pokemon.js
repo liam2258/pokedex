@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
 //Can only return one element
 const Pokemon = ({name, url, id, types}) => {

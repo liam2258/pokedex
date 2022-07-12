@@ -1,20 +1,20 @@
 import './App.css';
 import React from 'react';
 import {useState, useEffect} from 'react';
-import PokeList from './PokeList';
-import Search from './Search';
+import PokeList from './components/PokeList';
+import Search from './components/Search';
 
 function App() {
   const[allPokemons, setAllPokemons] = useState([])
   const[searchfield, setSearch] = useState('')
 
   const getAllPokemons = async () => {
-   const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=905')
+   const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=898')
    const data = await res.json()
 
    function createPokemonObject(results)  {
      results.forEach( async pokemon => {
-       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+       const res = await fetch(pokemon.url)
        const data =  await res.json()
        setAllPokemons( currentList => [...currentList, data])
      })
